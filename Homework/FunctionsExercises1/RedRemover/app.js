@@ -4,17 +4,17 @@ function setup(){
 
 function draw(){
     //white background with a slight opacity to allow a trailing of the circle
-    background (255, 255, 255, 75);
-
-    //makes a circle that follows the mouse and can have a color input but removes the red aspect from it
-    function redRemover(r, g, b){
-        //removing red
-        stroke(r-r, g, b);
-        //circle
-        strokeWeight(3);
-        ellipse(mouseX, mouseY, 40, 40);
-    }
+    background (255, 255, 255);
 
     //The function being ran
-    redRemover(255, 150, 255);
+    let newColor = redRemover(color(170, 200, 150))
+
+    fill(newColor);
+    strokeWeight(0);
+    ellipse(mouseX, mouseY, 40, 40);
+}
+
+function redRemover(color){
+        color.setRed(0);
+        return color;
 }
