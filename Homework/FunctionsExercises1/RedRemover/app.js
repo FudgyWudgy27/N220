@@ -9,11 +9,13 @@ function draw(){
     //The function being ran
     let newColor = redRemover(color(170, 200, 150))
 
+    //Making the circle
     fill(newColor);
     strokeWeight(0);
     ellipse(mouseX, mouseY, 40, 40);
 }
 
+//Removes the red aspect from the color
 function redRemover(color){
         color.setRed(0);
         return color;
