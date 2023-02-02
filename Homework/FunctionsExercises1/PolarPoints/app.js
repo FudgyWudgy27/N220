@@ -15,8 +15,8 @@ function draw(){
     ellipse(res.x, res.y, 20, 20);
 }
 
-  //does some funky math
-  function polarPoint(r){
+//does some funky math
+function polarPoint(r){
     x = r * Math.sin(mouseX);
     y = r * Math.cos(mouseX);
     return createVector(x, y);
