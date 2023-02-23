@@ -6,6 +6,6 @@ let myfavorites = document.getElementById("myfavorites");
 
 //The loop that write an item from the array followed by some text. Does this for every item in the array.
 for(let i = 0; i < favorites.length; i++){
-    myfavorites.innerHTML += favorites[i]+", is one of my foavorite things.<br>";
+    myfavorites.innerHTML += favorites[i]+", is one of my favorite things.<br>";
     console.log(i);
 }
