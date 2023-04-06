@@ -20,7 +20,7 @@ function splitInput(){
             //If it is equal to one, adds one to the counter
             counter++;
             //If it isn't equal to one then checks if the counter is equal to three
-        } else if(counter === 3){
+        } else if(counter >= 3){
             //If it is equal to three, then displays winner text
             display.innerHTML = "Winnner";
         } else {
@@ -30,7 +30,7 @@ function splitInput(){
     }
 
     //Once the loop is finished, it will once again check if the counter is equal to three
-    if(counter === 3){
+    if(counter >= 3){
         //If so, then displays winner text
         display.innerHTML = "Winnner";
     } else {
