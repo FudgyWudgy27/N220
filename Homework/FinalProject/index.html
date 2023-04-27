@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" type="text/css" href="app.css"/>
+</head>
+<body>
+    <div id="GameTitle">TicTacToe</div>
+    <div id="display"></div>
+    <table>
+      <tr>
+        <td id="tLeft" data-value="" onclick="play(0)"></td>
+        <td class="vert" id="tMid" data-value="" onclick="play(1)"></td>
+        <td id="tRight" data-value="" onclick="play(2)"></td>
+      </tr>
+      <tr>
+        <td class="hori" id="cLeft" data-value="" onclick="play(3)"></td>
+        <td class="vert hori" id="cMid" data-value="" onclick="play(4)"></td>
+        <td class="hori" id="cRight" data-value="" onclick="play(5)"></td>
+      </tr>
+      <tr>
+        <td id="bLeft" data-value="" onclick="play(6)"></td>
+        <td class="vert"id="bMid" data-value="" onclick="play(7)"></td>
+        <td id="bRight" data-value="" onclick="play(8)"></td>
+      </tr>
+    </table>
+
+    <button onclick="reset()" id="playButton">Reset</button>
+    <script src="app.js"></script>
+</body>
+</html>
