@@ -1,0 +1,17 @@
+table {
+    margin: 25px auto;
+}
+
+td {
+    width: 20px;
+    height: 60px;
+    border: 1px solid black;
+}
+
+.blank {
+    border: 0px;
+}
+
+.hidden {
+    background-color: grey;
+}
